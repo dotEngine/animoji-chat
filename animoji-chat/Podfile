@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'animoji-chat' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for animoji-chat
+  pod 'Animoji'
+  pod 'libdotEngine', :git => 'https://github.com/dotEngine/dotEngine-ios-sdk.git'
+end

@@ -1,0 +1,33 @@
+PODS:
+  - AFNetworking/Reachability (3.1.0)
+  - Animoji (0.0.3)
+  - GPUImage (0.1.7)
+  - libdotEngine (1.0.9):
+    - AFNetworking/Reachability
+    - GPUImage
+    - SocketRocket
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - Animoji
+  - libdotEngine (from `https://github.com/dotEngine/dotEngine-ios-sdk.git`)
+
+EXTERNAL SOURCES:
+  libdotEngine:
+    :git: https://github.com/dotEngine/dotEngine-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  libdotEngine:
+    :commit: 8baa65fe7629d9732156dc2c00d3f2d1d9a18eae
+    :git: https://github.com/dotEngine/dotEngine-ios-sdk.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Animoji: 71e1ffbd207222ef817c5caf5887660afdbc555a
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  libdotEngine: 1946cc6128eed87ce33cf44095d4794128656f80
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 3190a1b94f77d44539a79f6e0fbd13b08b2d4c3b
+
+COCOAPODS: 1.4.0.beta.2
