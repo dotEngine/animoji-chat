@@ -9,25 +9,30 @@ PODS:
   - SocketRocket (0.5.1)
 
 DEPENDENCIES:
-  - Animoji
+  - Animoji (from `https://github.com/notedit/Animoji.git`)
   - libdotEngine (from `https://github.com/dotEngine/dotEngine-ios-sdk.git`)
 
 EXTERNAL SOURCES:
+  Animoji:
+    :git: https://github.com/notedit/Animoji.git
   libdotEngine:
     :git: https://github.com/dotEngine/dotEngine-ios-sdk.git
 
 CHECKOUT OPTIONS:
+  Animoji:
+    :commit: 9b1df88262d91b0cc3c69e8face437eff849043d
+    :git: https://github.com/notedit/Animoji.git
   libdotEngine:
     :commit: 8baa65fe7629d9732156dc2c00d3f2d1d9a18eae
     :git: https://github.com/dotEngine/dotEngine-ios-sdk.git
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Animoji: 71e1ffbd207222ef817c5caf5887660afdbc555a
+  Animoji: eb1446fec922e2f3a84195ae8f7c1e6645930e81
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   libdotEngine: 1946cc6128eed87ce33cf44095d4794128656f80
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: 3190a1b94f77d44539a79f6e0fbd13b08b2d4c3b
+PODFILE CHECKSUM: 0f00bf196d8c12e21d318cc6424a878c750e60df
 
 COCOAPODS: 1.4.0.beta.2

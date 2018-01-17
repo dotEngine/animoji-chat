@@ -6,6 +6,6 @@ target 'animoji-chat' do
   use_frameworks!
 
   # Pods for animoji-chat
-  pod 'Animoji'
+  pod 'Animoji', :git => 'https://github.com/notedit/Animoji.git'
   pod 'libdotEngine', :git => 'https://github.com/dotEngine/dotEngine-ios-sdk.git'
 end

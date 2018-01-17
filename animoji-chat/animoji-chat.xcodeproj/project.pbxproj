@@ -13,6 +13,12 @@
 		F0397EE31FE8BBB700E77CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0397EE11FE8BBB700E77CA9 /* Main.storyboard */; };
 		F0397EE51FE8BBB700E77CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0397EE41FE8BBB700E77CA9 /* Assets.xcassets */; };
 		F0397EE81FE8BBB700E77CA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0397EE61FE8BBB700E77CA9 /* LaunchScreen.storyboard */; };
+		F0397EF01FE8C9F000E77CA9 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0397EF11FE8C9F000E77CA9 /* AFNetworking.framework */; };
+		F0397EF21FE8CA0500E77CA9 /* Animoji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0397EF31FE8CA0500E77CA9 /* Animoji.framework */; };
+		F0397EF41FE8CA0900E77CA9 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0397EF51FE8CA0900E77CA9 /* GPUImage.framework */; };
+		F0397EF61FE8CA1200E77CA9 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0397EF71FE8CA1200E77CA9 /* SocketRocket.framework */; };
+		F0397EF91FE8CA3B00E77CA9 /* libDotEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0397EF81FE8CA3B00E77CA9 /* libDotEngine.a */; };
+		F0397EFD1FE90B2700E77CA9 /* CVPixelBufferConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = F0397EFC1FE90B2700E77CA9 /* CVPixelBufferConvert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,15 @@
 		F0397EE41FE8BBB700E77CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0397EE71FE8BBB700E77CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0397EE91FE8BBB700E77CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0397EEF1FE8C85B00E77CA9 /* animoji-chat-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "animoji-chat-bridging-header.h"; sourceTree = "<group>"; };
+		F0397EF11FE8C9F000E77CA9 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0397EF31FE8CA0500E77CA9 /* Animoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Animoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0397EF51FE8CA0900E77CA9 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0397EF71FE8CA1200E77CA9 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0397EF81FE8CA3B00E77CA9 /* libDotEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDotEngine.a; path = Pods/libdotEngine/libDotEngine.a; sourceTree = "<group>"; };
+		F0397EFA1FE8CA7A00E77CA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F0397EFB1FE90B2700E77CA9 /* CVPixelBufferConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVPixelBufferConvert.h; sourceTree = "<group>"; };
+		F0397EFC1FE90B2700E77CA9 /* CVPixelBufferConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVPixelBufferConvert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0397EF91FE8CA3B00E77CA9 /* libDotEngine.a in Frameworks */,
+				F0397EF61FE8CA1200E77CA9 /* SocketRocket.framework in Frameworks */,
+				F0397EF41FE8CA0900E77CA9 /* GPUImage.framework in Frameworks */,
+				F0397EF21FE8CA0500E77CA9 /* Animoji.framework in Frameworks */,
+				F0397EF01FE8C9F000E77CA9 /* AFNetworking.framework in Frameworks */,
 				C86B0D1D46FAF2D517CF888A /* Pods_animoji_chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +63,12 @@
 		0F4EF0D1467C6D209AB01ADA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0397EFA1FE8CA7A00E77CA9 /* Foundation.framework */,
+				F0397EF81FE8CA3B00E77CA9 /* libDotEngine.a */,
+				F0397EF71FE8CA1200E77CA9 /* SocketRocket.framework */,
+				F0397EF51FE8CA0900E77CA9 /* GPUImage.framework */,
+				F0397EF31FE8CA0500E77CA9 /* Animoji.framework */,
+				F0397EF11FE8C9F000E77CA9 /* AFNetworking.framework */,
 				1BB6932DA3193EFD8CA2F935 /* Pods_animoji_chat.framework */,
 			);
 			name = Frameworks;
@@ -84,6 +110,9 @@
 				F0397EE41FE8BBB700E77CA9 /* Assets.xcassets */,
 				F0397EE61FE8BBB700E77CA9 /* LaunchScreen.storyboard */,
 				F0397EE91FE8BBB700E77CA9 /* Info.plist */,
+				F0397EEF1FE8C85B00E77CA9 /* animoji-chat-bridging-header.h */,
+				F0397EFB1FE90B2700E77CA9 /* CVPixelBufferConvert.h */,
+				F0397EFC1FE90B2700E77CA9 /* CVPixelBufferConvert.m */,
 			);
 			path = "animoji-chat";
 			sourceTree = "<group>";
@@ -225,6 +254,7 @@
 			files = (
 				F0397EE01FE8BBB700E77CA9 /* ViewController.swift in Sources */,
 				F0397EDE1FE8BBB700E77CA9 /* AppDelegate.swift in Sources */,
+				F0397EFD1FE90B2700E77CA9 /* CVPixelBufferConvert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,10 +394,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLKRLU8RPY;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "animoji-chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/libdotEngine",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cc.dot.animoji-chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "animoji-chat/animoji-chat-bridging-header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,10 +417,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLKRLU8RPY;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "animoji-chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/libdotEngine",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cc.dot.animoji-chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "animoji-chat/animoji-chat-bridging-header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

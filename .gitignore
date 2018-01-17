@@ -67,3 +67,5 @@ fastlane/screenshots
 fastlane/test_output
 
 *.xcworkspace/
+
+.DS_Store
