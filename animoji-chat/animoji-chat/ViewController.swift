@@ -8,10 +8,12 @@
 
 import UIKit
 import Animoji
+import Toaster
 
-let APP_KEY = "dotcc"
-let APP_SECRET = "dotcc"
+let APP_SECRET = "dotEngine_secret"
 let ROOM = "animoji-chat"
+let TOKEN_URL = "https://dotengine2.dot.cc/api/generateToken"
+
 
 class ViewController: UIViewController, DotEngineDelegate, DotStreamDelegate {
     
@@ -66,23 +68,24 @@ class ViewController: UIViewController, DotEngineDelegate, DotStreamDelegate {
        
         animoji.frame = CGRect(x:0 ,y:0, width: self.view.frame.size.width, height: self.view.frame.size.height/2)
         
-        print("widthxheight", animoji.frame.size.width, animoji.frame.size.height)
         
         let name = Animoji.PuppetName.all[7]
         animoji.setPuppet(name: name)
         self.view.addSubview(animoji)
         // todo need set frame
-        
-        let frame = CGRect(x:0, y: self.view.frame.size.height/2 , width: self.view.frame.size.width, height: self.view.frame.size.height/2)
-        
-        localStream.view?.frame = frame
-        
-        imageView = UIImageView.init(frame: frame)
-        self.view.addSubview(localStream.view!)
+//
+//        let frame = CGRect(x:0, y: self.view.frame.size.height/2 , width: self.view.frame.size.width, height: self.view.frame.size.height/2)
+//
+//        localStream.view?.frame = frame
+//
+//        localStream.view?.backgroundColor = UIColor.white
+//
+//        self.view.addSubview(localStream.view!)
         
         let randomNum = arc4random_uniform(10000)
         let userId = "stream\(randomNum)"
-        dotEngine.generateTestToken(withAppKey: APP_KEY,appsecret: APP_SECRET, room: ROOM, userId: userId) { (token, error) in
+        
+        dotEngine.generateTestToken(TOKEN_URL,appsecret: APP_SECRET, room: ROOM, userId: userId) { (token, error) in
             guard error == nil else {
                 print(error!)
                 return
@@ -184,13 +187,29 @@ class ViewController: UIViewController, DotEngineDelegate, DotStreamDelegate {
     
     func dotEngine(_ engine: DotEngine, didAddLocalStream stream: DotStream) {
         print("didAddLocalStream")
+        
+        let toast = Toast(text: "Waiting anohter one to join....")
+        toast.show()
     }
     
     func dotEngine(_ engine: DotEngine, didRemoveLocalStream stream: DotStream) {
+        
     }
     
     func dotEngine(_ engine: DotEngine, didAddRemoteStream stream: DotStream) {
         print("didAddRemoteStream")
+        
+        let toast = Toast(text: "Someone joined")
+        toast.show()
+        
+        let frame = CGRect(x:0, y: self.view.frame.size.height/2 , width: self.view.frame.size.width, height: self.view.frame.size.height/2)
+        
+        localStream.view?.frame = frame
+        
+        localStream.view?.backgroundColor = UIColor.white
+        
+        self.view.addSubview(localStream.view!)
+        
     }
     
     func dotEngine(_ engine: DotEngine, didRemoveRemoteStream stream: DotStream) {

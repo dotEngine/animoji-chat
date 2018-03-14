@@ -1,16 +1,18 @@
 PODS:
-  - AFNetworking/Reachability (3.1.0)
-  - Animoji (0.0.3)
+  - AFNetworking/Reachability (3.2.0)
+  - Animoji (0.0.5)
   - GPUImage (0.1.7)
-  - libdotEngine (1.0.9):
+  - libdotEngine (1.1.1):
     - AFNetworking/Reachability
     - GPUImage
     - SocketRocket
   - SocketRocket (0.5.1)
+  - Toaster (2.1.1)
 
 DEPENDENCIES:
   - Animoji (from `https://github.com/notedit/Animoji.git`)
   - libdotEngine (from `https://github.com/dotEngine/dotEngine-ios-sdk.git`)
+  - Toaster
 
 EXTERNAL SOURCES:
   Animoji:
@@ -20,19 +22,20 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Animoji:
-    :commit: 9b1df88262d91b0cc3c69e8face437eff849043d
+    :commit: 26803276de3289a1cd735ee32b0ced1221e3f041
     :git: https://github.com/notedit/Animoji.git
   libdotEngine:
-    :commit: 8baa65fe7629d9732156dc2c00d3f2d1d9a18eae
+    :commit: 5c00f6a94f36391c08875ddbfbf2b27608de75b7
     :git: https://github.com/dotEngine/dotEngine-ios-sdk.git
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Animoji: eb1446fec922e2f3a84195ae8f7c1e6645930e81
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  Animoji: ba82f318308dcc798bcbf0dd25b4b25dcbe6c234
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
-  libdotEngine: 1946cc6128eed87ce33cf44095d4794128656f80
+  libdotEngine: 84513790430ff2ee9c55670c8c7ae3661cbd2adf
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: 0f00bf196d8c12e21d318cc6424a878c750e60df
+PODFILE CHECKSUM: 16eb73d96615fc4886ff5f39496e3f5ed9d12b18
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.4.0.rc.1
