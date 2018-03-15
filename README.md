@@ -1,6 +1,6 @@
 # animoji-chat
 
-a video chat based on animoji and dotEngine
+Video chat based on animoji and dotEngine
 
 
 ## Run  
