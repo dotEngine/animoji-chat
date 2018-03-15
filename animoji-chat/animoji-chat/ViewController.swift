@@ -204,11 +204,11 @@ class ViewController: UIViewController, DotEngineDelegate, DotStreamDelegate {
         
         let frame = CGRect(x:0, y: self.view.frame.size.height/2 , width: self.view.frame.size.width, height: self.view.frame.size.height/2)
         
-        localStream.view?.frame = frame
+        stream.view?.frame = frame
         
-        localStream.view?.backgroundColor = UIColor.white
+        stream.view?.backgroundColor = UIColor.white
         
-        self.view.addSubview(localStream.view!)
+        self.view.addSubview(stream.view!)
         
     }
     
